@@ -3,8 +3,8 @@
 package org.example.visitor.serializable;
 
 import java.io.Serializable;
-import javax.annotation.Generated;
-import javax.xml.bind.JAXBElement;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.JAXBElement;
 import org.example.imported.ImportedData;
 import org.example.imported.ImportedType;
 import org.example.simple.ChoiceElement;

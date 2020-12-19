@@ -1,7 +1,7 @@
 package com.massfords.jaxb;
 
-import org.jvnet.jaxb2.maven2.AbstractXJC2Mojo;
-import org.jvnet.jaxb2.maven2.test.RunXJC2Mojo;
+import org.jvnet.jaxb2.maven2.AbstractXJC3Mojo;
+import org.jvnet.jaxb2.maven2.test.RunXJC3Mojo;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * @author mford
  */
-public class DirectClassesTest extends RunXJC2Mojo {
+public class DirectClassesTest extends RunXJC3Mojo {
     private GeneratedCodeFixture generatedCodeFixture = new GeneratedCodeFixture(
             "src/test/resources/expected-direct/{0}.java.txt",
             "target/generated-sources/xjc/org/example/direct/{0}.java");
@@ -21,7 +21,7 @@ public class DirectClassesTest extends RunXJC2Mojo {
     }
 
     @Override
-    protected void configureMojo(AbstractXJC2Mojo mojo) {
+    protected void configureMojo(AbstractXJC3Mojo mojo) {
         super.configureMojo(mojo);
         mojo.setBindingDirectory(getSchemaDirectory());
         mojo.setForceRegenerate(true);

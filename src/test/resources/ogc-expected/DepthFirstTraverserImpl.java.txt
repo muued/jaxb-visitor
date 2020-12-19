@@ -2,8 +2,8 @@
 
 package ogc.visitor;
 
-import javax.annotation.Generated;
-import javax.xml.bind.JAXBElement;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.JAXBElement;
 import net.opengis.fes._2.AbstractIdType;
 import net.opengis.fes._2.AdditionalOperatorsType;
 import net.opengis.fes._2.ArgumentType;

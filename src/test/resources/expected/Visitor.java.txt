@@ -8,7 +8,7 @@
 
 package org.example.visitor;
 
-import javax.annotation.Generated;
+import jakarta.annotation.Generated;
 import org.example.imported.ImportedData;
 import org.example.imported.ImportedType;
 import org.example.simple.ChoiceElement;

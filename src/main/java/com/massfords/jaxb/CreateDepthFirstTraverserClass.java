@@ -149,7 +149,7 @@ class CreateDepthFirstTraverserClass extends CodeCreator {
     		return false;
     	}
     	for(JAnnotationUse use :  field.annotations()) {
-    		if(use.getAnnotationClass().fullName().equals("javax.xml.bind.annotation.XmlIDREF")) {
+    		if(use.getAnnotationClass().fullName().equals("jakarta.xml.bind.annotation.XmlIDREF")) {
     			return true;
     		}
     	}    	

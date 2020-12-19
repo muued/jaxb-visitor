@@ -1,8 +1,8 @@
 package com.massfords.jaxb;
 
 import org.junit.Test;
-import org.jvnet.jaxb2.maven2.AbstractXJC2Mojo;
-import org.jvnet.jaxb2.maven2.test.RunXJC2Mojo;
+import org.jvnet.jaxb2.maven2.AbstractXJC3Mojo;
+import org.jvnet.jaxb2.maven2.test.RunXJC3Mojo;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author markford
  */
-public abstract class BaseVisitorPluginTest extends RunXJC2Mojo {
+public abstract class BaseVisitorPluginTest extends RunXJC3Mojo {
 
     final GeneratedCodeFixture generatedCodeFixture;
     private final String srcDir;
@@ -29,7 +29,7 @@ public abstract class BaseVisitorPluginTest extends RunXJC2Mojo {
     }
 
     @Override
-    protected void configureMojo(AbstractXJC2Mojo mojo) {
+    protected void configureMojo(AbstractXJC3Mojo mojo) {
         super.configureMojo(mojo);
         mojo.setForceRegenerate(true);
         mojo.setBindingExcludes(new String[]{"*.xjb"});

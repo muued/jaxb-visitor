@@ -4,10 +4,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.jvnet.jaxb2.maven2.AbstractXJC2Mojo;
-import org.jvnet.jaxb2.maven2.test.RunXJC2Mojo;
+import org.jvnet.jaxb2.maven2.AbstractXJC3Mojo;
+import org.jvnet.jaxb2.maven2.test.RunXJC3Mojo;
 
-public class ExcludeIDRefTest extends RunXJC2Mojo {
+public class ExcludeIDRefTest extends RunXJC3Mojo {
     private GeneratedCodeFixture generatedCodeFixture = new GeneratedCodeFixture(
             "src/test/resources/vec-expected/{0}.java.txt",
             "target/generated-sources/xjc/org/prostep/ecadif/vec113/visitor/{0}.java");
@@ -18,7 +18,7 @@ public class ExcludeIDRefTest extends RunXJC2Mojo {
     }
 
     @Override
-    protected void configureMojo(AbstractXJC2Mojo mojo) {
+    protected void configureMojo(AbstractXJC3Mojo mojo) {
         super.configureMojo(mojo);
         mojo.setBindingDirectory(getSchemaDirectory());
         mojo.setForceRegenerate(true);
