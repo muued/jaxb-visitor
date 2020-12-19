@@ -41,6 +41,12 @@
             <email>mark@massfords.com</email>
         </developer>
     </developers>
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>
@@ -116,9 +122,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.jvnet.jaxb2.maven2</groupId>
-            <artifactId>maven-jaxb2-plugin-testing</artifactId>
-            <version>0.14.0</version>
+            <groupId>com.github.muued.maven-jaxb2-plugin</groupId>
+            <artifactId>maven-jaxb3-plugin-testing</artifactId>
+            <version>playground-SNAPSHOT</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
